@@ -26,3 +26,11 @@ set ttyfast                 " Speed up scrolling in Vim
 set noswapfile            " disable creating swap file
 set backupdir=~/.cache/vim " Directory to store backup files.
 
+call plug#begin('~/.vim/plugged')
+ Plug 'dracula/vim'
+ Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+call plug#end()
+
+colorscheme dracula
+
+nnoremap <leader>v <cmd>CHADopen<cr>
