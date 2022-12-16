@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "coc-vetur": ">=1.2.5",
     "coc-tsserver": ">=2.1.0"
   }
 }

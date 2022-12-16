@@ -32,9 +32,14 @@ call plug#begin('~/.vim/plugged')
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
+let g:coc_global_extensions = [
+            \ 'coc-vetur',
+            \ 'coc-tsserver',
+            \ ]
+
 colorscheme dracula
 
 nnoremap <leader>v <cmd>CHADopen<cr>
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+                            \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
