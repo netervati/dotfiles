@@ -14,5 +14,7 @@ vim.call('plug#begin', '~/.vim/plugged')
     Plug ('nvim-treesitter/nvim-treesitter', {
         ['do'] = ':TSUpdate'
     })
+    Plug 'lewis6991/gitsigns.nvim'
+    Plug 'rhysd/git-messenger.vim'
 vim.call('plug#end')
 
