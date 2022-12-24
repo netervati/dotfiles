@@ -16,5 +16,6 @@ vim.call('plug#begin', '~/.vim/plugged')
     })
     Plug 'lewis6991/gitsigns.nvim'
     Plug 'rhysd/git-messenger.vim'
+    Plug 'w0rp/ale'
 vim.call('plug#end')
 
