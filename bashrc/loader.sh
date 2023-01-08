@@ -16,3 +16,8 @@ export NVM_DIR="$HOME/.nvm"
 # Init: Starship: Cross-shell Prompt
 eval "$(starship init bash)"
 
+# Init: Go
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
