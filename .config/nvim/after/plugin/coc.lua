@@ -4,6 +4,6 @@
 vim.cmd([[
     let g:coc_global_extensions = [
         \ 'coc-tsserver',
+        \ '@yaegassy/coc-volar',
     \ ]
 ]])
-

@@ -9,6 +9,7 @@ require'nvim-treesitter.configs'.setup {
         "ruby",
         "rust",
         "typescript",
+        "vim",
         "vue",
     },
     sync_install = false,
