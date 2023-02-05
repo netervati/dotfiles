@@ -4,14 +4,11 @@
 
 <br>
 
-### Configurations
-- Neovim
-
-<br>
-
 ### Neovim Setup
 - [dracula/vim](https://github.com/dracula/vim)
 - [ms-jpq/chadtree](https://github.com/ms-jpq/chadtree)
 - [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim)
 - [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
+### Notes
+- Add .wslconfig in `%USERPROFILE%`
