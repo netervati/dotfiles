@@ -4,11 +4,20 @@
 
 <br>
 
-### Neovim Setup
+### Neovim Packages
+- [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)
 - [dracula/vim](https://github.com/dracula/vim)
-- [ms-jpq/chadtree](https://github.com/ms-jpq/chadtree)
 - [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim)
+- [ms-jpq/chadtree](https://github.com/ms-jpq/chadtree)
 - [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [rhysd/git-messenger.vim](https://github.com/rhysd/git-messenger.vim)
+- [w0rp/ale](https://github.com/dense-analysis/ale)
+- [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
+
+### Also using
+- [Starship](https://starship.rs/)
 
 ### Notes
-- Add .wslconfig in `%USERPROFILE%`
+- If using WSL2, add `.wslconfig` in `%USERPROFILE%`
+
