@@ -18,6 +18,10 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'rhysd/git-messenger.vim'
   use 'w0rp/ale'
+  use({
+    'iamcco/markdown-preview.nvim',
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
 end)
 
 --[[ TO REINSTALL NEXT:
