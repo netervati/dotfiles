@@ -5,13 +5,13 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use { 'dracula/vim', as = 'dracula' }
-  use ('neoclide/coc.nvim', { branch = 'release'})
+  use ( 'neoclide/coc.nvim', { branch = 'release'})
   use { 'ms-jpq/chadtree', {
       branch = 'chad',
       run = 'python3 -m chadtree deps'
     }
   }
-  use {'nvim-treesitter/nvim-treesitter', {
+  use { 'nvim-treesitter/nvim-treesitter', {
         run = ':TSUpdate'
     }
   }
@@ -22,6 +22,11 @@ return require('packer').startup(function(use)
     'iamcco/markdown-preview.nvim',
     run = function() vim.fn["mkdp#util#install"]() end,
   })
+  use { 'junegunn/fzf', run = './install --bin', }
+  use { 'ibhagwan/fzf-lua',
+    -- optional for icon support
+    requires = { 'nvim-tree/nvim-web-devicons' }
+  }
 end)
 
 --[[ TO REINSTALL NEXT:
