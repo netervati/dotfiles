@@ -1,2 +1,2 @@
-require("netervati")
+require('netervati')
 

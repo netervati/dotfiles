@@ -7,3 +7,4 @@ vim.cmd([[
         \ '@yaegassy/coc-volar',
     \ ]
 ]])
+

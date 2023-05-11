@@ -1,4 +1,4 @@
-require("netervati.config")
-require("netervati.plugins")
-require("netervati.remap")
+require('netervati.config')
+require('netervati.plugins')
+require('netervati.remap')
 
