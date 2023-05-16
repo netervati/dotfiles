@@ -19,4 +19,5 @@ vim.keymap.set('i', '<CR>', 'v:lua.check_confirm()', { noremap = true, expr = tr
 vim.keymap.set('n', '<c-P>', "<cmd>lua require('fzf-lua').files()<CR>", { silent = true })
 vim.keymap.set('n', '<c-G>', "<cmd>lua require('fzf-lua').grep()<CR>", { silent = true })
 vim.keymap.set('n', '<c-L>', "<cmd>lua require('fzf-lua').live_grep()<CR>", { silent = true })
+vim.keymap.set('n', '<leader>g', "<cmd>lua require('fzf-lua').git_status()<CR>", { silent = true })
 
