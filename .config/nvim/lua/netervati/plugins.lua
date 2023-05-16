@@ -13,7 +13,6 @@ return require('packer').startup(function(use)
     run = 'python3 -m chadtree deps'
   })
   use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
-  use 'lewis6991/gitsigns.nvim'
   use 'rhysd/git-messenger.vim'
   use 'w0rp/ale'
   use ('iamcco/markdown-preview.nvim', {
