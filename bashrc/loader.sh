@@ -21,3 +21,5 @@ export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
+# Terminal File & Folder colors
+export LS_COLORS="$(vivid generate dracula)"
