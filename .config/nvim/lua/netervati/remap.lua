@@ -12,6 +12,8 @@ function check_confirm()
 end
 
 vim.keymap.set('n', '<leader>v','<cmd>CHADopen<cr>')
+
+-- COC
 vim.keymap.set('i', '<CR>', 'v:lua.check_confirm()', { noremap = true, expr = true, silent = true })
 
 

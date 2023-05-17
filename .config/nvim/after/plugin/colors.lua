@@ -10,6 +10,5 @@ vim.cmd[[
     augroup END
 ]]
 
-
 vim.cmd 'colorscheme dracula'
 
