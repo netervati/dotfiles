@@ -19,6 +19,7 @@
 ## Shell Setup & Notes
 - [Starship](https://starship.rs/)
 - [FiraCode Nerd Font](https://starship.rs/presets/nerd-font)
+- [sharkdp/vivid](https://github.com/sharkdp/vivid)
 
 ### Ubuntu (WSL2)
 - Add `.wslconfig` in `%USERPROFILE%`
