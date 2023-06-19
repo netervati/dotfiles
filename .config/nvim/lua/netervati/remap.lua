@@ -17,9 +17,10 @@ vim.keymap.set('n', '<leader>v','<cmd>CHADopen<cr>')
 vim.keymap.set('i', '<CR>', 'v:lua.check_confirm()', { noremap = true, expr = true, silent = true })
 
 
--- Fuzzy Finder
-vim.keymap.set('n', '<c-P>', "<cmd>lua require('fzf-lua').files()<CR>", { silent = true })
-vim.keymap.set('n', '<c-G>', "<cmd>lua require('fzf-lua').grep()<CR>", { silent = true })
-vim.keymap.set('n', '<c-L>', "<cmd>lua require('fzf-lua').live_grep()<CR>", { silent = true })
-vim.keymap.set('n', '<leader>g', "<cmd>lua require('fzf-lua').git_status()<CR>", { silent = true })
-
+-- Telescope
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<c-P>', builtin.find_files, {})
+vim.keymap.set('n', '<leader>g', builtin.git_status, {})
+vim.keymap.set('n', '<c-L>', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
