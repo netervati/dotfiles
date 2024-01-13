@@ -1,4 +1,3 @@
-![Neovim demo](https://raw.githubusercontent.com/netervati/dotfiles/main/demo/workflow.png)
 # My Personal Dotfiles
 <i>⚙ This is a Work-in-Progress ⚙</i>
 
