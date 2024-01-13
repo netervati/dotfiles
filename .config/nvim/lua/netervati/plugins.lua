@@ -1,25 +1,22 @@
 -- Installs the plugins for Neovim
 
 
-vim.cmd [[packadd packer.nvim]]
+vim.g.mapleader = ' ' -- Make sure to set `mapleader` before lazy so your mappings are correct
 
 
-return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim'
-  use ('dracula/vim', { as = 'dracula' })
-  use ('neoclide/coc.nvim', { branch = 'release' })
-  use ('ms-jpq/chadtree', {
-    branch = 'chad',
-    run = 'python3 -m chadtree deps'
-  })
-  use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
-  use 'lewis6991/gitsigns.nvim'
-  use 'rhysd/git-messenger.vim'
-  use 'w0rp/ale'
-  use ('iamcco/markdown-preview.nvim', {
-    run = function() vim.fn['mkdp#util#install']() end
-  })
-  use 'nvim-tree/nvim-web-devicons'
-  use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = { {'nvim-lua/plenary.nvim'} } }
-end)
+return require('lazy').setup({
+    {
+        'dracula/vim',
+        lazy = false, -- make sure we load this during startup if it is your main colorscheme
+        priority = 1000, -- make sure to load this before all the other start plugins
+    },
+    { 'nvim-treesitter/nvim-treesitter' },
+    { 'lewis6991/gitsigns.nvim' },
+    { 'rhysd/git-messenger.vim' },
+    {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.5',
+        dependencies = 'nvim-lua/plenary.nvim'
+    }
+})
 
