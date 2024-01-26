@@ -26,5 +26,7 @@ vim.cmd[[
     set noswapfile              " disable creating swap file
     set backupdir=~/.cache/vim  " Directory to store backup files.
     set shell=bash              " Sets the default shell for :term
+    set omnifunc=lsp#omnifunc
 ]]
+
 
