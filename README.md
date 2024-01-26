@@ -10,6 +10,9 @@
 - [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [rhysd/git-messenger.vim](https://github.com/rhysd/git-messenger.vim)
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [VonHeikemen/lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim)
+- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 
 ## Shell Setup & Notes
 - [Starship](https://starship.rs/)
