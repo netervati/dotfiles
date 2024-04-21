@@ -5,17 +5,14 @@ vim.g.mapleader = ' ' -- Make sure to set `mapleader` before lazy so your mappin
 
 
 return require('lazy').setup({
-    -- Theme
     {
         'dracula/vim',
         lazy = false,
         priority = 1000,
     },
     { 'nvim-treesitter/nvim-treesitter' },
-    -- GIT
     { 'lewis6991/gitsigns.nvim' },
     { 'rhysd/git-messenger.vim' },
-    -- File search
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.5',

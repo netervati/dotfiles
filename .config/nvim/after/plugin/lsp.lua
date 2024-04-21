@@ -7,6 +7,9 @@ lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
 end)
 
-lspconfig = require("lspconfig")
+local lspconfig = require('lspconfig')
+
+lspconfig.solargraph.setup({})
 lspconfig.pylsp.setup({})
+lspconfig.tsserver.setup({})
 
